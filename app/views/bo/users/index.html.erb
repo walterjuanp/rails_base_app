@@ -1,0 +1,14 @@
+<h1>List of users</h1>
+<%= link_to 'Add new', new_bo_user_path %>
+<ul>
+  <% for user in @users %>
+    <li><p>
+      <%= user.email %>, 
+      <%= link_to 'show', bo_user_path(user) %>
+      <%= link_to 'edit', edit_bo_user_path(user) %>,
+      <%= link_to 'destoy', bo_user_path(user), :confirm => 'Are you sure?', :method => :delete %>
+    </p></li>
+  <% end %>
+</ul>
+
+<%= will_paginate @users %>

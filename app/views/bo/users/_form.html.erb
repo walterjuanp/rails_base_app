@@ -1,0 +1,31 @@
+<%# PARAMS: user
+%>
+<%= form_for [:bo, user] do |f| %>
+  <% if user.errors.any? %>
+    <div>
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited
+          this post from being saved:</h2>
+      <ul>
+      <% user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <div>
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </div>
+  <div>
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+  </div>
+  <div>
+    <%= f.label :password_confirmation %>
+    <%= f.password_field :password_confirmation %>
+  </div>
+  <div>
+    <%= f.submit %>
+  </div>
+<% end %>

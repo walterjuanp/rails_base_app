@@ -1,4 +1,16 @@
 Site::Application.routes.draw do
+  
+  root :to => 'home#index'
+
+  resources :user_sessions
+  match 'login'   => "user_sessions#new",     :as => :login
+  match 'logout'  => "user_sessions#destroy", :as => :logout
+  
+  namespace :bo do
+    resources :users
+  end
+
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
