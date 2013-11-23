@@ -1,24 +1,20 @@
-Rails (3.2.15) base application
-===============================
+# Rails (3.2.15) base application
 
 This is a base app named 'Site'.
 
-This has:
----------
+## This has:
 
 - **Public**: The home page and login page
 - **BackOffice**: Separed space with a users CRUD. The *bo* is the short for BackOffice
 
 
-Gems
-----
+## Gems
 
 - **authlogic**:      Used for authenticaton
 - **will_paginate**:  For paginated queries (used in users list)
 
 
-Changes from empty Rails (3.2.15) app:
---------------------------------------
+## Changes from empty Rails (3.2.15) app:
 
 - **Models**: Add ```user``` and ```user_session```
 - **Controllers**: Add ```home_controller```, ```user_sessions_controller``` and a ***bo*** namespace with ```bo/users_controller``` and ```bo/base_controller```, the ```base_controller``` is the controller that all controllers inside *bo* namespace must be extend, this ```base_controller``` is used to guarantee that only authenticated users can access and if you like for other common things.
@@ -28,8 +24,7 @@ Changes from empty Rails (3.2.15) app:
 - **Migrations**: Create users table, note: we don't use the 'login' column of authlogic
 - **Seed**: Add default user
 
-Run the example:
---------------------
+## Run the example:
 
 - Create database:
   - ```$ bundle exec rake db:create```
