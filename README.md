@@ -4,9 +4,9 @@ This is a base app named 'Site'.
 
 ## This has:
 
-- **Public**: The home page and login page
-- **BackOffice**: Separed space with a users CRUD. The *bo* is the short for BackOffice
-
+- **Public**: The home page and login page.
+- **BackOffice**: Separed space with a users CRUD. The *bo* is the short for BackOffice.
+- **Internationalization**: Add support for internationalization and custom methods for order the locales.
 
 ## Gems
 
