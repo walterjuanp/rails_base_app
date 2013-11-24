@@ -1,6 +1,6 @@
-
 <p>
-<%= link_to_unless I18n.locale == :en, "English", locale: :en %>
-|
-<%= link_to_unless I18n.locale == :es, "Spanish", locale: :es %>
+  <% for locale in I18n.available_locales %>
+    <%= link_to_unless I18n.locale == locale, t("locales.#{locale}"), :locale => locale %>
+  <% end %>
 </p>
+
