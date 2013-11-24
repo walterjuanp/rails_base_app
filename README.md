@@ -1,6 +1,6 @@
 # Rails (3.2.15) base application
 
-This is a base app named 'Site'.
+This is a base app named 'Site' created using Ruby 2.0.
 
 ## This has:
 
@@ -88,7 +88,8 @@ For change locale in app:
 
 
 ## Run the example:
-
+- Install gems:
+  - ```$ bundle install```
 - Create database:
   - ```$ bundle exec rake db:create```
 - Mirate: 
