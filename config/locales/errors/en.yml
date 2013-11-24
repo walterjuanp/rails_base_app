@@ -1,0 +1,6 @@
+
+en:
+  errors:
+    logged_in_to_access: You must be logged in to access this page
+    logged_out_to_access: You must be logged out to access this page
+    there_are_errors: "There are errors"

@@ -1,0 +1,6 @@
+
+en:
+  views:
+    defaults:
+      notice: Notice
+      signed_as: "Signed in as %{email}. Not you?"

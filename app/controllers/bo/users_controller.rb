@@ -15,7 +15,7 @@ class Bo::UsersController < Bo::BaseController
     @user = User.new(params[:user])
    
     if @user.save
-      redirect_to([:bo, @user], :notice => 'User was successfully created.') 
+      redirect_to [:bo, @user], :notice => I18n.tmsg('successfully_created', :model => I18n.tmodel(User))
     else
       render :action => "new" 
     end
@@ -29,7 +29,7 @@ class Bo::UsersController < Bo::BaseController
     @user = User.find(params[:id])
    
     if @user.update_attributes(params[:user])
-      redirect_to([:bo, @user], :notice => 'User was successfully updated.')
+      redirect_to [:bo, @user], :notice => I18n.tmsg('successfully_updated', :model => I18n.tmodel(User))
     else
       render :action => "edit"
     end
@@ -39,9 +39,7 @@ class Bo::UsersController < Bo::BaseController
     @user = User.find(params[:id])
     @user.destroy
    
-    respond_to do |format|
-      format.html { redirect_to bo_users_url }
-    end
+    redirect_to bo_users_url, :notice => I18n.tmsg('successfully_destroyed', :model => I18n.tmodel(User))
   end
 end
 

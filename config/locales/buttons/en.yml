@@ -1,0 +1,14 @@
+
+en:
+  buttons:
+    sign_out: Sign out
+    backoffice: BackOffice
+    sign_in: Sign in
+    public_home: Public home
+    home: Home
+    login: Login
+    show: Show
+    edit: Edit
+    destroy: Destroy
+    add_new: Add new
+    list_of_users: List of users

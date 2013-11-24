@@ -1,0 +1,14 @@
+
+es:
+  buttons:
+    sign_out: Cerrar sesión
+    backoffice: Panel administrativo
+    sign_in: Iniciar sesión
+    public_home: Página principal pública
+    home: Página principal
+    login: Iniciar sesión
+    show: Ver
+    edit: Editar
+    destroy: Eliminar
+    add_new: Añadir nuevo
+    list_of_users: Listado de usuarios

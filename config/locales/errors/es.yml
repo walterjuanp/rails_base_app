@@ -1,0 +1,6 @@
+
+es:
+  errors:
+    logged_in_to_access: Deves de iniciar sesión para aceder a esta página
+    logged_out_to_access: Deves de cerrar la sesión para aceder a esta página
+    there_are_errors: "Hay errores"

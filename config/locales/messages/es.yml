@@ -1,0 +1,10 @@
+# encoding: UTF8
+es:
+  messages:
+    are_you_sure: Estas seguro?
+    login_successful: Se ha iniciado sesión correctamente!
+    logout_successful: Se ha cerrado la sesión correctamente!
+    successfully_created: "%{model} ha sido creado."
+    successfully_updated: "%{model} ha sido actualizado."
+    successfully_destroyed: "%{model} ha sido eliminado."
+    

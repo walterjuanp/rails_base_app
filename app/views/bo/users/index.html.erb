@@ -1,12 +1,12 @@
-<h1>List of users</h1>
-<%= link_to 'Add new', new_bo_user_path %>
+<h1><%= tview('list_of_users') %></h1>
+<%= link_to I18n.tbtn('add_new'), new_bo_user_path %>
 <ul>
   <% for user in @users %>
     <li><p>
       <%= user.email %>, 
-      <%= link_to 'show', bo_user_path(user) %>
-      <%= link_to 'edit', edit_bo_user_path(user) %>,
-      <%= link_to 'destoy', bo_user_path(user), :confirm => 'Are you sure?', :method => :delete %>
+      <%= link_to I18n.tbtn('show'), bo_user_path(user) %>
+      <%= link_to I18n.tbtn('edit'), edit_bo_user_path(user) %>,
+      <%= link_to I18n.tbtn('destroy'), bo_user_path(user), :confirm => I18n.tmsg('are_you_sure'), :method => :delete %>
     </p></li>
   <% end %>
 </ul>

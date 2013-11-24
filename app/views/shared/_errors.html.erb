@@ -1,0 +1,13 @@
+<%# PARAMS: target
+%>
+
+<% if target.errors.any? %>
+  <div>
+    <h2><%= I18n.terr 'there_are_errors' %></h2>
+    <ul>
+      <% target.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>

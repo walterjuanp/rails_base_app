@@ -1,17 +1,7 @@
 <%# PARAMS: user
 %>
 <%= form_for [:bo, user] do |f| %>
-  <% if user.errors.any? %>
-    <div>
-      <h2><%= pluralize(user.errors.count, "error") %> prohibited
-          this post from being saved:</h2>
-      <ul>
-      <% user.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+  <%= render 'shared/errors', :target => user %>
   
   <div>
     <%= f.label :email %>

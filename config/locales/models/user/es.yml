@@ -1,0 +1,10 @@
+# encoding: UTF8
+es:
+  activerecord:
+    models:
+      user: Usuario
+    attributes:
+      user:
+        email: Email
+        password: Contraseña
+        password_confirmation: Confirmación de contraseña

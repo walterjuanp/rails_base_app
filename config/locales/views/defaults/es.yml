@@ -1,0 +1,6 @@
+
+es:
+  views:
+    defaults:
+      notice: Noticia
+      signed_as: "Sesión iniciada como %{email}. No eres tu?"

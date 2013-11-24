@@ -9,20 +9,24 @@
 <body>
 
 <div>
+  <% if notice %>
+    <p><%= tview('notice') %>: <%= notice %></p>
+  <% end %>
+  
+  <%= render 'shared/locale_links' %>
+
   <% if current_user %>
     <p>
-      <%= "Signed in as #{current_user.email}. Not you?, " %>
-      <%= link_to "Sign out", logout_path %>, 
-      <%= link_to "Public home", root_path %>
+      <%= tview('signed_as', :email => current_user.email) %>
+      <%= link_to I18n.tbtn('sign_out'), logout_path %>, 
+      <%= link_to I18n.tbtn('public_home'), root_path %>
     </p>
   <% else %>
     <p>
-      <%= link_to "Sign in", login_path %>
+      <%= link_to I18n.tbtn('sign_in'), login_path %>
     </p>
   <% end %>
 </div>
-
-<p>Notice: <%= notice %></p>
 
 <hr />
 

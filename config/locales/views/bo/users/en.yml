@@ -1,0 +1,10 @@
+
+en:
+  views:
+    bo:
+      users:
+        list_of_users: List of users
+        user: User
+        new_user: New user
+        edit_user: Edit user
+      

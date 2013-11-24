@@ -1,16 +1,9 @@
-<h1>Login</h1>
+<h1><%= tview('login') %></h1>
+
+<%= link_to I18n.tbtn('home'), root_path %>
+
 <%= form_for @user_session, :url => {:action => "create"} do |f| %>
-  <% if @user_session.errors.any? %>
-    <div>
-      <h2><%= pluralize(@user_session.errors.count, "error") %> prohibited
-          this post from being saved:</h2>
-      <ul>
-      <% @user_session.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+  <%= render 'shared/errors', :target => @user_session %>
   
   <div>
     <%= f.label :email %>
@@ -25,6 +18,6 @@
     <%= f.label :remember_me %>
   </div>
   <div>
-    <%= f.submit "Login" %>
+    <%= f.submit I18n.tbtn('login') %>
   </div>
 <% end %>

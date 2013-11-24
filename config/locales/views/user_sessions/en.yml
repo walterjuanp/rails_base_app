@@ -1,0 +1,5 @@
+
+en:
+  views:
+    user_sessions:
+      login: Login

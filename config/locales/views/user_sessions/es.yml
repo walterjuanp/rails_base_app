@@ -1,0 +1,5 @@
+
+es:
+  views:
+    user_sessions:
+      login: Iniciar sessión
